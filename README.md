@@ -1,2 +1,2 @@
 # Web-developmentFRX
-repo for private project
+repo for publicproject
