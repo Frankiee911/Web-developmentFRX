@@ -4,7 +4,3 @@ project
   -to do list
 -python
   -backend
-  -devops
-  -react
-  -angular
-  
