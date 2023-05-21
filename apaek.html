@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      header ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+
+      header ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      main {
+        padding: 40px 0;
+      }
+
+      h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+
+      .menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .menu-item {
+        width: calc(33.33% - 20px);
+        margin-bottom: 40px;
+      }
+
+      .menu-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+
+      .menu-item h3 {
+        margin: 10px 0;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 10px 0;
+        }
+
+        header h1 {
+          font-size: 20px;
+        }
+
+        .menu-item {
+          width: calc(50% - 20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h1>Coffee Shop</h1>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h2>Welcome to our Coffee Shop</h2>
+          <p>Experience the finest coffee in town</p>
+          <a href="#menu" class="btn">View Menu</a>
+        </div>
+      </section>
+
+      <section id="menu">
+        <div class="container">
+          <h2>Our Menu</h2>
+          <div class="menu-items">
+            <div class="menu-item">
+              <img src="coffee1.jpg" alt="Coffee 1" />
+              <h3>Special Blend</h3>
+              <p>A perfect blend of rich flavors</p>
+            </div>
+            <div class="menu-item">
+              <img src="coffee2.jpg" alt="Coffee 2" />
+              <h3>Espresso</h3>
+              <p>A strong and concentrated coffee</p>
+            </div>
+            <div class="menu-item">
+              <img src="coffee3.jpg" alt="Coffee 3" />
+              <h3>Cappuccino</h3>
+              <p>A classic Italian coffee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            ultricies felis ac malesuada rutrum. Suspendisse potenti. Cras
+            dignissim lectus id ante suscipit, id interdum massa dignissim.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Coffee Shop. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
